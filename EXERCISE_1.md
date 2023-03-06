@@ -16,7 +16,12 @@ Comando para estructura básica "!"
     </header>
     <main>
         <div>
-            SECCION 1
+            <div>
+                Beautiful Scheduling Built for Small Businesses
+            </div>
+            <div>
+                Simple scheduling software that solves online booking, client reminders, staff calendars and some more...
+            </div>
         </div>
         <div>
             SECCION ICONOS
