@@ -1,0 +1,1 @@
+{"version":3,"sources":["app.js"],"names":["HelloWorld","console","log","document","addEventListener"],"mappings":"AAIA,SAAAA,aACAC,QAAAC,IAAA,eALAC,SAAAC,iBAAA,oBAAA,WACAJ","file":"bundle.js","sourcesContent":["document.addEventListener(\"DOMContentLoaded\", function () {\r\n  HelloWorld();\r\n});\r\n\r\nfunction HelloWorld() {\r\n  console.log(\"Hello World\");\r\n}"]}
