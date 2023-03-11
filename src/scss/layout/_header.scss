@@ -1,0 +1,57 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.navbar-flex {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 6rem;
+  background-color: white;
+}
+
+.img-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.button-nav {
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-size: 1.5rem;
+  color: v.$white;
+  background-color: v.$greenDark;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  margin-left: 1rem;
+  transition: background-color 0.5s;
+  &:hover {
+    background-color: v.$greenLight;
+    transition: background-color 0.5s;
+  }
+}
+
+
+nav {
+    .img-container1,
+    .img-container2 {
+        img {
+            height: 100%;
+        }
+    }
+    .img-container1 {
+        height: 4rem;
+    }
+    .img-container2 {
+        height: 2.5rem;
+    }
+
+  a {
+    color: v.$greenDark;
+    font-weight: bold;
+  }
+}
+
+.nav-link {
+  color: v.$greenDark;
+}
