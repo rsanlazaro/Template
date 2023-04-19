@@ -17,7 +17,7 @@ Comando para estructura básica "!"
     <main>
         <div>
             <div>
-                Beautiful Scheduling Built for Small Businesses
+                Beautiful Scheduling Built for Small Businesse
             </div>
             <div>
                 Simple scheduling software that solves online booking, client reminders, staff calendars and some more...
