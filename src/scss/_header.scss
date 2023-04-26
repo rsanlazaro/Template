@@ -1,0 +1,56 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+header{
+    background-color: transparent;
+}
+
+nav{
+    height: 15rem;
+    margin: 0 10rem;
+}
+
+.container-fluid{
+    div{
+        a{
+            color: v.$ButtonGreen;
+            font-weight: bold;
+        }
+        .navbar-right{
+            font-weight: bold;
+        }
+        .navbar-center{
+            a{
+                margin: 0 1.5rem;
+                border-bottom: 3px solid transparent;
+                transition: all 0.5s;
+                &:hover{
+                    border-bottom: 3px solid v.$ButtonGreen;
+                }
+            }
+        }
+        button{
+            background-color: v.$ButtonGreen;
+            color: v.$white;
+            font-weight: bold;
+            padding: 1.75rem 1.5rem;
+            border-radius: 1rem;
+        }
+        a,button{
+            font-size: 1.5rem;
+            @include m.tablet{
+                font-size: 1.75rem;
+            }
+            @include m.laptop{
+                font-size: 2rem;
+            }
+            @include m.desktop{
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
+.navbar-nav .nav-link.active{
+    color: v.$ButtonGreen;
+}
+
