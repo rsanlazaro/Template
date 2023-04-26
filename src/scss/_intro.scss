@@ -1,2 +1,51 @@
 @use "base/variables" as v;
 @use "base/mixins" as m;
+
+.intro{
+    margin: 3rem 10rem;
+    .intro-grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: 5rem;
+        &>*{//Se aplica para todo elemento adentro, si se pone afuera es un margen global
+            margin: 5rem;
+        }
+    }
+    .intro-grid-text{
+        h2{
+            font-size: 5rem;
+            
+        }
+        p{
+            font-size: 2rem;
+            margin: 3rem 0;
+        }
+        .intro-small-p{
+            font-size: 1rem;
+            margin: 0.5rem 0;
+            color: v.$gray;
+        }
+        a{
+            margin: 10rem 0;
+            button{
+                background-color: v.$greenlight;
+                margin-bottom: 4rem;
+            }
+        }
+    }
+    .intro-brands{
+        .intro-brands-title{
+            text-align: center;
+            text-transform: uppercase;
+            color: v.$gray;
+        }
+        .intro-brands-images{
+            display: flex;
+            justify-content: space-between;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+

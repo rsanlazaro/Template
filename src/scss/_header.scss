@@ -23,18 +23,14 @@ nav{
             a{
                 margin: 0 1.5rem;
                 border-bottom: 3px solid transparent;
-                transition: all 0.5s;
+                transition: all 1s;
                 &:hover{
                     border-bottom: 3px solid v.$ButtonGreen;
                 }
             }
         }
         button{
-            background-color: v.$ButtonGreen;
-            color: v.$white;
-            font-weight: bold;
-            padding: 1.75rem 1.5rem;
-            border-radius: 1rem;
+            margin: 0 2rem;
         }
         a,button{
             font-size: 1.5rem;
@@ -54,3 +50,6 @@ nav{
     color: v.$ButtonGreen;
 }
 
+.navbar-right{
+    display: flex;
+}
