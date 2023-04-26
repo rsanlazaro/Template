@@ -1,2 +1,48 @@
 @use "base/variables" as v;
 @use "base/mixins" as m;
+
+.intro {
+    margin: 3rem 10rem;
+    .intro-grid {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        &>* {
+            margin: 5rem;
+        }
+        .intro-grid-text {
+            h2 {
+                font-size: 5rem;
+            }
+            p {
+                font-size: 1.25rem;
+                margin: 2rem 0;
+            }
+            .intro-small-p {
+                font-size: 1rem;
+                margin: 0.5rem 0;
+                color: v.$gray;
+            }
+            a {
+                margin: 10rem 0;
+                button {
+                    background-color: v.$greenLight;
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+    .intro-brands {
+        .intro-brands-title {
+            text-align: center;
+            color: v.$gray;
+            text-transform: uppercase;
+        }
+        .intro-brands-images {
+            display: flex;
+            justify-content: space-between;
+            img {
+                width: 15rem;
+            }
+        }
+    }
+}
