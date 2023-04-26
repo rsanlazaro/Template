@@ -1,0 +1,63 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+header {
+    background-color: transparent;
+}
+
+nav {
+    height: 15rem;
+    margin: 0 10rem;
+}
+
+.container-fluid {
+    background-color: transparent;
+    .navbar-right {
+        display: flex;
+        a {
+            font-weight: bold;
+        }
+    }
+    .navbar-center {
+        a {
+            margin: 0 1.5rem;
+            border-bottom: 3px solid transparent;
+            transition: all 0.5s;
+            &:hover {
+                border-bottom: 3px solid v.$greenDark;
+                transition: all 0.5s;
+            }
+        }
+    }
+    div {
+        a {
+            color: v.$greenDark;
+        }
+        button {
+            background-color: v.$greenDark;
+            color: v.$white;
+            font-weight: bold;
+            padding: 1.75rem 1.5rem;
+            border-radius: 1rem;
+            margin: 0 2rem;
+        }
+        // mobile, tablet, laptop, desktop, desktopXL
+        a,
+        button {
+            font-size: 1.25rem;
+            @include m.tablet {
+                font-size: 1.5rem;
+            }
+            @include m.laptop {
+                font-size: 1.75rem;
+            }
+            @include m.desktop {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+.navbar-nav .nav-link.active {
+    color: v.$greenDark;
+}
