@@ -17,6 +17,17 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  // background-image: url("build/img/blob.png");
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: v.$white;
+}
+
+nav {
+  background-color: v.$white;
 }
 
 main {
@@ -40,6 +51,15 @@ button {
 }
 
 h2 {
+  letter-spacing: -1px;
   color: v.$greenDark;
   font-weight: normal;
+}
+
+.green-button {
+  background-color: v.$greenLight;
+}
+
+.dark-green-button {
+  background-color: v.$greenDark;
 }

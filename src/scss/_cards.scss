@@ -1,0 +1,59 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.cards {
+    display: flex;
+    margin: 15rem 30rem;
+    // .card {
+    //     height: 50rem;
+    //     width: 60rem !important;
+    // }
+    .text {
+        margin-left: 3rem;
+    }
+}
+
+.carousel-item {
+    .card {
+        border-width: 0;
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 5px;
+    height: 5px;
+    margin-right: 3px;
+    margin-left: 3px;
+    margin-top: 10rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: 3px solid v.$greenDark;
+    border-radius: 50%;
+    // opacity: .5;
+    // transition: opacity .6s ease;
+}
+
+.carousel-indicators {
+    bottom: -4rem;
+}
+
+.card-img {
+    position: relative;
+    .card-circle {
+        position: absolute;
+        right: 1rem;
+        bottom: -2rem;
+        width: 5rem;
+        height: 5rem;
+        background-color: red;
+        border-radius: 50%;
+        content: "";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

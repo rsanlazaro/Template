@@ -1,2 +1,39 @@
 @use "base/variables" as v;
 @use "base/mixins" as m;
+
+.table {
+    margin: 15rem 10%;
+    width: 80%;
+    .table-title {
+      h2 {
+        font-size: 2.5rem;
+        text-align: center;
+      }
+    }
+    thead {
+      tr {
+        th {
+          color: v.$greenDark;
+          padding: 1.5rem;
+          vertical-align: middle;
+          font-size: 2rem;
+          width: 20%;
+        }
+      }
+    }
+    th, td {
+      padding: 1.5rem;
+      vertical-align: middle;
+      color: darken(v.$gray,25%);
+    }
+}
+
+td {
+  h3 {
+    font-size: 1.75rem;
+  }
+}
+
+.large-th {
+  width: 40% !important;
+}
